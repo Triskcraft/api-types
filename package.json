@@ -1,10 +1,11 @@
 {
     "name": "@triskcraft/api-types",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "description": "Api types of triskcraft",
     "main": "dist/v1/index.js",
-    "export": {
-        "v1": "dist/v1/index.js"
+    "exports": {
+        ".": "./dist/v1/index.js",
+        "./v1": "./dist/v1/index.js"
     },
     "files": [
         "dist"

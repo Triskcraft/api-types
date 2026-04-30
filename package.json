@@ -1,0 +1,50 @@
+{
+    "name": "@triskcraft/api-types",
+    "version": "1.1.0",
+    "description": "Api types of triskcraft",
+    "main": "dist/v1/index.js",
+    "export": {
+        "v1": "dist/v1/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Triskcraft/api-types.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Triskcraft/api-types/issues"
+    },
+    "homepage": "https://github.com/Triskcraft/api-types#readme",
+    "dependencies": {
+        "zod": "4.4.1"
+    },
+    "devDependencies": {
+        "@eslint/json": "1.2.0",
+        "@types/node": "24.12.2",
+        "eslint": "10.2.1",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-import-resolver-typescript": "4.4.4",
+        "eslint-plugin-import": "2.32.0",
+        "prettier": "3.8.3",
+        "typescript": "6.0.3",
+        "typescript-eslint": "8.59.1"
+    },
+    "overrides": {
+        "eslint-plugin-import": {
+            "eslint": "10.2.1"
+        }
+    },
+    "engines": {
+        "node": ">=24.14"
+    }
+}

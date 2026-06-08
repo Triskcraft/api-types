@@ -58,9 +58,14 @@ export const BlogPostPlayerSchema = z.object({
 
 export type BlogPostPlayer = z.infer<typeof BlogPostPlayerSchema>
 
+export const BlogPostCoverImageSchema = PostBlockMediaSchema
+
+export type BlogPostCoverImage = z.infer<typeof BlogPostCoverImageSchema>
+
 export const BlogPostSchema = z.object({
     id: z.string(),
     title: z.string(),
+    cover_image: BlogPostCoverImageSchema.nullable(),
     user: BlogPostUserSchema,
     created_at: z.number(),
     updated_at: z.number(),

@@ -13,6 +13,7 @@
     "type": "module",
     "scripts": {
         "build": "tsc",
+        "format:fix": "prettier --write .",
         "prepublishOnly": "npm run build"
     },
     "repository": {

@@ -1,6 +1,6 @@
 {
     "name": "@triskcraft/api-types",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "description": "Api types of triskcraft",
     "main": "dist/v1/index.js",
     "exports": {
@@ -27,6 +27,7 @@
     },
     "homepage": "https://github.com/Triskcraft/api-types#readme",
     "dependencies": {
+        "@eliyya/flagged-bitfield": "1.1.1",
         "zod": "4.4.1"
     },
     "devDependencies": {
